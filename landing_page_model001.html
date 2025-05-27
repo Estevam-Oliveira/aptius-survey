@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aptius Survey - Saúde Mental Corporativa</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter :wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --azul: #4B79CA;
+      --verde: #5CB897;
+      --cinza-escuro: #333333;
+      --cinza-claro: #F5F6F8;
+      --branco: #FFFFFF;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background-color: var(--cinza-claro);
+      color: var(--cinza-escuro);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--branco);
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--azul);
+    }
+
+    .logo_img img {
+      height: 100px;
+      width: auto;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--azul);     
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: var(--cinza-escuro);
+      font-weight: 500;
+    }
+
+    .hero {
+      background: linear-gradient(to right, var(--azul), var(--verde));
+      color: white;
+      padding: 80px 40px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto 30px;
+    }
+
+    .btn {
+      background: var(--branco);
+      color: var(--azul);
+      padding: 12px 24px;
+      border-radius: 5px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    section {
+      padding: 60px 40px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: var(--azul);
+    }
+
+    .features {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .feature {
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      flex: 1;
+      min-width: 250px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    footer {
+      background: var(--cinza-escuro);
+      color: white;
+      padding: 40px;
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      .features {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo_img">
+      <img src="image/img_logo/Aptius Survey_Logomarca.png" alt="Aptius Survey">
+    </div>
+    <!--div class="logo">Aptius Survey</div-->
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#como-funciona">Como Funciona</a>
+      <a href="#ferramentas">Ferramentas</a>
+      <a href="#planos">Planos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Ferramentas certas para entender o que importa</h1>
+    <p>Apoie psicólogos organizacionais com dados sobre saúde mental coletiva. Avaliação anônima, segura e estatisticamente relevante.</p>
+    <a href="#cadastro" class="btn">Comece Agora</a>
+  </section>
+
+  <!-- Sobre -->
+  <section id="sobre">
+    <h2 class="section-title">Sobre Nós</h2>
+    <p>A Aptius Survey nasceu com o objetivo de oferecer às equipes de RH e psicólogos organizacionais as melhores ferramentas digitais para mensurar e promover a saúde mental dos colaboradores. Acreditamos que ambientes de trabalho saudáveis são mais produtivos, humanizados e sustentáveis.</p>
+    <div class="features">
+      <div class="feature">
+        <h3>Missão</h3>
+        <p>Empoderar profissionais de psicologia com soluções digitais para avaliar e melhorar a saúde mental corporativa.</p>
+      </div>
+      <div class="feature">
+        <h3>Visão</h3>
+        <p>Ser reconhecida como a plataforma mais completa e segura para avaliação de saúde mental corporativa no Brasil.</p>
+      </div>
+      <div class="feature">
+        <h3>Valores</h3>
+        <p>Empatia, ética, evidência científica, clareza, inovação e colaboração humana-tecnológica.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Como Funciona -->
+  <section id="como-funciona">
+    <h2 class="section-title">Como Funciona</h2>
+    <ol>
+      <li><strong>Cadastro:</strong> Psicólogos criam conta e validam credenciais.</li>
+      <li><strong>Escolha:</strong> Selecionam pacotes ou ferramentas específicas (DASS21, ECHO, WHO-5 etc).</li>
+      <li><strong>Pagamento:</strong> Assinatura ou compra única, com acesso imediato.</li>
+      <li><strong>Compartilhamento:</strong> Recebem links anônimos para enviar aos colaboradores.</li>
+      <li><strong>Análise:</strong> Respostas são processadas e geram relatórios estatísticos.</li>
+      <li><strong>Apresentação:</strong> Resultados compartilhados com gestores para planejamento estratégico.</li>
+    </ol>
+  </section>
+
+  <!-- Ferramentas -->
+  <section id="ferramentas">
+    <h2 class="section-title">Ferramentas Disponíveis</h2>
+    <ul>
+      <li>DASS-21 (Depressão, Ansiedade e Estresse)</li>
+      <li>ECHO (Engajamento e Clima Humano Organizacional)</li>
+      <li>WHO-5 (Bem-Estar Subjetivo)</li>
+      <li>WEMWBS (Warwick-Edinburgh Mental Wellbeing Scale)</li>
+      <li>Escalas personalizáveis por setor ou função</li>
+    </ul>
+  </section>
+
+  <!-- Relatórios -->
+  <section>
+    <h2 class="section-title">Relatórios Estatísticos</h2>
+    <p>Resultados claros e objetivos para apresentação a gestores e áreas de RH. Gráficos interativos, médias, desvios padrão e comparações históricas entre setores ou períodos.</p>
+  </section>
+
+  <!-- Diferenciais -->
+  <section>
+    <h2 class="section-title">Por Que Escolher a Aptius Survey?</h2>
+    <ul>
+      <li>Anonimato garantido das respostas</li>
+      <li>Conformidade com a LGPD</li>
+      <li>Integração com pagamento seguro</li>
+      <li>Interface intuitiva para psicólogos e colaboradores</li>
+      <li>Relatórios exportáveis (PDF, Excel)</li>
+    </ul>
+  </section>
+
+  <!-- Planos -->
+  <section id="planos">
+    <h2 class="section-title">Planos e Preços</h2>
+    <div class="features">
+      <div class="feature">
+        <h3>Básico</h3>
+        <p>R$ 99/mês</p>
+        <ul>
+          <li>Até 3 ferramentas</li>
+          <li>100 respostas/mês</li>
+          <li>Acesso básico a relatórios</li>
+        </ul>
+      </div>
+      <div class="feature">
+        <h3>Avançado</h3>
+        <p>R$ 199/mês</p>
+        <ul>
+          <li>Todas as ferramentas</li>
+          <li>1000 respostas/mês</li>
+          <li>Relatórios completos e exportações</li>
+        </ul>
+      </div>
+      <div class="feature">
+        <h3>Enterprise</h3>
+        <p>Personalizado</p>
+        <ul>
+          <li>Ferramentas customizadas</li>
+          <li>Respostas ilimitadas</li>
+          <li>Integração com sistemas internos</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato">
+    <h2 class="section-title">Entre em Contato</h2>
+    <p>Preencha o formulário abaixo para saber mais ou agendar uma demonstração.</p>
+    <form style="margin-top: 20px;">
+      <input type="text" placeholder="Nome" required style="width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px;" />
+      <input type="email" placeholder="E-mail" required style="width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px;" />
+      <textarea placeholder="Mensagem" rows="4" required style="width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px;"></textarea>
+      <button type="submit" style="background: var(--azul); color: white; padding: 10px 20px; border: none; border-radius: 4px;">Enviar</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Aptius Survey por WZ Analysis. Todos os direitos reservados.</p>
+    <p>Política de Privacidade | Termos de Uso</p>
+  </footer>
+
+</body>
+</html>
